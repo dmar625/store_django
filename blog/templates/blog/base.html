@@ -13,16 +13,16 @@
     <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
 
     {% if title %}
-        <title>Zoo Store - {{ title }}</title>
+        <title>E-Shop - {{ title }}</title>
     {% else %}
-        <title>Zoo Store</title>
+        <title>E-Shop</title>
     {% endif %}
 </head>
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Zoo Store</a>
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">E-Shop</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,6 +30,8 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'blog-home' %}">Aktualności</a>
               <a class="nav-item nav-link" href="{% url 'blog-about' %}">O nas</a>
+			  <a class="nav-item nav-link" href="{% url 'blog-about' %}">Produkty</a>
+			  <a class="nav-item nav-link" href="{% url 'blog-about' %}">Koszyk</a>
 			  <a class="nav-item nav-link" href="{% url 'contact' %}">Kontakt</a>
             </div>
             <!-- Navbar Right Side -->

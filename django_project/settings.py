@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
 	'users.apps.UsersConfig',
 	'contact.apps.ContactConfig',
+	'products.apps.ProductsConfig',
+	'shopping_cart.apps.ShoppingCartConfig',
 	'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
